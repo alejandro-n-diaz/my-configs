@@ -32,7 +32,9 @@
   - Usually comes bundled with Linux distribution
 
 ## Installation
-1. Install vim plugin manager. I use (and recommend) [vim-plug](https://github.com/junegunn/vim-plug).
+1. Install vim plugin manager. I use (and recommend) [vim-plug](https://github.com/junegunn/vim-plug). 
+2. Copy the `.vimrc` to your home directory: `cp /path/to/my-configs/.vimrc
+   ~/.vimrc`
 2. Install vim plugins using vim-plug: open vim and execute `:PlugInstall`
 3. Install fuzzy finder. Do `~/.vim/plugged/fzf/install`. 
 
