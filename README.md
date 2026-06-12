@@ -1,7 +1,4 @@
-# Alejandro's vim setup
-12 June 2026
-
-## Introduction 
+# Alejandro's Vim setup
 
 ## Dependencies
 - Vim 9
