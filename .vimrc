@@ -49,8 +49,8 @@ call plug#end()
 
 " NERDTree settings
 nnoremap <C-t> :NERDTreeToggle<CR>
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
 
 " ale settings
 let g:ale_linters = {
@@ -69,8 +69,13 @@ let g:ale_virtualtext_cursor = 'disabled'
 " jedi settings
 let g:jedi#popup_on_dot = 0
 
+" markdown settings
 autocmd FileType markdown setlocal textwidth=80
 autocmd FileType markdown setlocal spell spelllang=en_us
+
+" change cursor to line in insert mode
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
 
 " colorscheme codedark 
 colorscheme slate 
