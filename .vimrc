@@ -26,19 +26,12 @@ Plug 'tpope/vim-commentary' " toggle comment
 Plug 'tpope/vim-surround' "  auto surround selected text with delimiters
 Plug 'jiangmiao/auto-pairs' " automatically insert right delimeter when left delimeter is inserted
 Plug 'christoomey/vim-tmux-navigator' " navigate between vim and tmux panes
+Plug 'preservim/nerdtree'  " file tree for vim
 
 " linting, formatting, autocomplete
 Plug 'dense-analysis/ale' " linting and formatting
 Plug 'davidhalter/jedi-vim' " python syntax completion
 Plug 'ervandew/supertab' " tab completion
-
-" file tree
-if has('nvim')
-	Plug 'nvim-tree/nvim-tree.lua'
-	Plug 'nvim-tree/nvim-web-devicons'
-else
-	Plug 'preservim/nerdtree'  " file tree for vim
-endif
 
 " themes, display, syntax highlighting
 Plug 'sheerun/vim-polyglot' " syntax highlighting language support
@@ -60,12 +53,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': 
 call plug#end()
 
 " PLUGIN SETTINGS
-if !has('nvim') 
-	" NERDTree settings
-	nnoremap <C-t> :NERDTreeToggle<CR>
-	" autocmd StdinReadPre * let s:std_in=1
-	" autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
-endif
+nnoremap <C-t> :NERDTreeToggle<CR>
 
 " ale settings
 let g:ale_linters = {
