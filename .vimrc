@@ -1,7 +1,10 @@
 " VIM SETTINGS
+if has('macunix')
+	set clipboard=unnamed " for Mac
+else
+	set clipboard=unnamedplus " for Linux
+endif
 set number
-set clipboard=unnamed " for Mac
-" set clipboard=unnamedplus " for Linux
 set splitright 
 set splitbelow
 set autoindent
