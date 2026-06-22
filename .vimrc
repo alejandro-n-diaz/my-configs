@@ -54,6 +54,7 @@ call plug#end()
 
 " PLUGIN SETTINGS
 nnoremap <C-t> :NERDTreeToggle<CR>
+let g:NERDTreeWinSize=50
 
 " ale settings
 let g:ale_linters = {
